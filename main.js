@@ -87,10 +87,7 @@ const createPeerConnection = async (MemberID) => {
   document.getElementById("user-1").classList.add("small-frame");
 
   if (!localStream) {
-    localStream = await navigator.mediaDevices.getUserMedia({
-      video: true,
-      audio: false,
-    });
+    localStream = await navigator.mediaDevices.getUserMedia(constrains);
     document.getElementById("user-1").srcObject = localStream;
   }
 
