@@ -25,6 +25,10 @@ body {
   line-height: 0;
 }
 
+#form__container__header p {
+  font-weight: bold;
+}
+
 #form__content__wrapper {
   padding: 20px;
 }
@@ -40,8 +44,15 @@ input {
   font-size: 15px;
   background-color: #3f434a;
   margin-top: 32px;
+  outline: none;
 }
 
 input[type="submit"] {
   background-color: #845695;
+}
+
+@media (max-width: 600px) {
+  #form__container__header p {
+    font-size: 13px;
+  }
 }
